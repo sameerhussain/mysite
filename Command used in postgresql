@@ -1,0 +1,7 @@
+
+
+CREATE USER mysite	user WITH PASSWORD 'password';
+ALTER ROLE mysiteuser SET client_encoding TO 'utf8';
+ALTER ROLE mysiteuser SET default_transaction_isolation TO 'read committed';
+ALTER ROLE mysiteuser SET timezone TO 'GMT+0530';
+GRANT ALL PRIVILEGES ON DATABASE mysite TO mysiteuser;
